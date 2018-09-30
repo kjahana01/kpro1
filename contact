@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Illusion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+}
+</script>
+  <style>
+      .navbar{
+          margin-bottom: 0;
+          border-radius: 0;
+          background-color: darkcyan;
+          color: #FFF;
+          padding: 10px 0;
+          font-size: 1.2em;
+          border: 0;
+      }
+      .navbar-brand{
+          float: left;
+          min-height: 15px;
+          padding: 0 15px 5px;
+          margin-top: 20px;
+          margin-left: -10px;
+          text-decoration-color: white;
+          font-size: 2.2em;
+      }
+      .navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+          color: #FFF;
+          background-color: darkcyan;
+      }
+      .navbar-inverse .navbar-nav li a {
+          color: white;
+      }
+      .container{
+          margin; 5% auto;
+      }
+      #icon {
+          max-width: 270px;
+          margin:  auto;
+          max-height: 220px;
+      }
+      footer {
+          max-width: 100%;
+          background-color: black;
+          color: #FFF;
+          padding: 3%;
+          height: 100%;
+      }
+      .fa {
+          padding: 20px;
+          font-size: 30px;
+          color: #FFF;
+      }
+      .fa:hover{
+          color: lightsalmon;
+          text-decoration: none;
+      }
+      @media (max-widh: 600px) {
+          .carousel-caption{
+              display: none;
+          }
+          #icon{
+              max-width: 150px;
+          }
+          h2{
+              font-size: 1.9em;
+          }
+      }
+      
+      
+  .container {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 50%;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  padding: 80px;
+}
+
+.form > img {
+  align-self: center;
+  max-height: 250px;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.form > label {
+  width: 100%;
+  min-width: 300px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+  align-self: center;
+  
+}
+
+.form > .input {
+  width: 95%;
+  min-width: 300px;
+  color: black;
+  margin-bottom: 15px;
+  opacity: .75;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  outline: none;
+  align-self: center;
+  animation-name: collapse;
+  animation-duration: 1s;
+}
+
+.form > .input:first-child {
+  margin-top: 15px;
+}
+
+.form > .input:focus {
+  border: 5px solid #ef9a9a;
+  animation-name: expand;
+  animation-duration: 1s;
+  padding: 12.5px;
+  font-size: 18px;
+  width: 97.5%;
+  align-self: center;
+}
+
+@keyframes expand {
+  from { padding: 10px; width: 95%; border: 1px solid #ef9a9a; }
+  to { padding: 12.5px; width: 97.5%; border: 5px solid #ef9a9a; }
+}
+
+@keyframes collapse {
+  from { padding: 12.5px; width: 97.5%; border: 5px solid #ef9a9a; }
+  to { padding: 10px; width: 95%; border: 1px solid #ef9a9a; }
+}
+
+.form > .submit {
+  width: 75%;
+  min-width: 150px;
+  align-self: center;
+  color: #FFF;
+  background-color: black;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form > .submit:hover {
+  background-color: indianred;
+}
+      
+  </style>
+</head>
+    
+    <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+               </button>
+                <a class="navbar-brand" href="#"><font color="white"> I L L U S I O N </font></a>
+            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="bmain.html">Home</a></li>
+                <li><a href="I1.html">Gallery</a></li>
+                <li><a href="track.html">Track ISS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+      </div>   
+    </nav>
+
+<div class="container-fluid text-center">
+        <h2 font color="white"><I><b>JOIN US!</b></I></h2>
+    <form class="form-signin" method="post" action="illdb.php">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" placeholder="User Name" name="uname" required autofocus><br><br>
+                <input type="email" placeholder="User Email" name="uemail" required autofocus><br><br>
+                <input type="password" placeholder="Password" name="upass" required><br><br>
+                 <input type="password" placeholder="Confirm Password" name="cupass" required><br><br>
+                <input type="text" placeholder="contact" name="ucont" required><br><br>
+
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label><br><br>
+                </div>
+                <button class="btn btn-lg btn-primary btn-signin" type="submit" name="register">SIGN UP</button>
+            </form><!-- /form -->
+   </div>
+        <br />
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Contact Us!</h3>
+                    <br />
+                    <h4>The contact info is here.</h4>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Connect with Illusion</h3>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-google"></a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/I%20Icon.png" id="icon">
+                </div>
+            </div>
+              <br />@Copy: 2017. All rigts reserved!
+        </footer>
+        
+               
+</body>
+</html>
